@@ -12,6 +12,8 @@ module MiniMagick
 
     def run(command, options = {})
       stdout, stderr, code = execute(command)
+      
+      debugger
 
       case code
       when 1
